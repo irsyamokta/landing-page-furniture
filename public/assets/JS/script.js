@@ -1,3 +1,5 @@
+// Script untuk toggle navbar
+
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
 const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
@@ -14,9 +16,10 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 
-const home = document.getElementById('point');
+// Script untuk kondisi background navbar
+
+const home = document.getElementById('navbar');
 const nav = document.getElementById('navbar');
-const text = document.getElementsByClassName('navbar-items');
 const homeHeight = home.clientHeight;
 
 window.addEventListener('scroll', function () {

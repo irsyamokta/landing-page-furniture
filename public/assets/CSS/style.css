@@ -70,8 +70,8 @@ body {
   background-color: var(--navbar-bg-contrast);
 }
 .navbar-logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 #navbar-toggle {
   cursor: pointer;
@@ -178,7 +178,7 @@ body {
 }
 
 .title-wrap .btn:hover {
-  background-color: #FFF0CE;
+  background-color: #fff0ce;
 }
 
 /* Advantages */
@@ -271,7 +271,108 @@ body {
   padding: 15px;
 }
 
-/* Partner */
+/* Contact */
+.card-contact {
+  justify-content: center;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.form-contact {
+  width: 550px;
+  height: 500px;
+  background-color: #fff0ce;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px;
+}
+
+.form-contact input {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.form-contact .msg {
+  height: 150px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.form-contact button {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0c356a;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* About */
+.container-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-about {
+  background-color: white;
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.desc-about {
+  width: 50%;
+  background-color: #ffc436;
+  padding: 80px;
+}
+
+.desc-about p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.card-sertificate .sertificate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 10px;
+}
+
+.card-sertificate .sertificate img {
+  width: 300px;
+}
+
+/* Product */
+.other-product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.other-1 {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
 @media screen and (min-width: 700px) {
   #navbar-toggle,
@@ -298,5 +399,180 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Hero */
+  .hero {
+    background-image: url("/landing-page-furniture/public/img/hero.jpg");
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .title-wrap {
+    width: 100%;
+    height: 300px;
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .title-wrap .btn {
+    margin-top: 25px;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffc436;
+    font-weight: 500;
+  }
+
+  .title-wrap .btn:hover {
+    background-color: #fff0ce;
+  }
+
+  /* Product */
+  .product {
+    margin-top: 10rem;
+  }
+
+  .container-product h1 {
+    text-align: center;
+  }
+
+  .card-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 3rem;
+  }
+
+  .product-1 {
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    overflow: hidden;
+    flex: 0 80%;
+  }
+
+  /* Contact */
+  .form-contact {
+    width: 350px;
+    height: 500px;
+    background-color: #fff0ce;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+  }
+
+  /* About */
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .title-about {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .desc-about {
+    width: 100%;
+    background-color: #ffc436;
+    padding: 30px;
+  }
+
+  .desc-about p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .banner-1 {
+    width: 350px;
+  }
+
+  .other-1 h4{
+    font-size: 16px;
+  }
+
+  .other-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px){
+  /* Hero */
+  .hero {
+    background-image: url("/landing-page-furniture/public/img/hero.jpg");
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .title-wrap {
+    width: 100%;
+    height: 300px;
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .title-wrap .btn {
+    margin-top: 25px;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffc436;
+    font-weight: 500;
+  }
+
+  .title-wrap .btn:hover {
+    background-color: #fff0ce;
   }
 }
